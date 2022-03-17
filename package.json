@@ -1,12 +1,23 @@
 {
   "name": "leo-player",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "author": {
+    "name": "Leo",
+    "email": "asdfpeng@qq.com"
+  },
+  "repository": "https://github.com/iicoom/leo-player.git",
+  "bugs": "https://github.com/iicoom/leo-player/issues",
+  "keywords": ["audio", "music player", "vue"],
+  "license": "MIT",
+  "files": ["dist/*"],
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "build-library": "vue-cli-service build --target lib --name leo-player ./src/install.js"
   },
+  "main": "dist/leo-player.common.js",
   "dependencies": {
     "core-js": "^3.6.5",
     "vue": "^2.6.11"
